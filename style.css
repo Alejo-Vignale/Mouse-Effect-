@@ -63,47 +63,57 @@ body {
 }
 
 
-/* Add this to the existing CSS */
-
+/* Presentation .card */
 .card {
   position: absolute;
+  border: #111 2px solid;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 800px;
   height: 500px;
-  background: rgb(229,228,226);
-  background: radial-gradient(circle, rgba(229,228,226,1) 0%, rgba(41,41,41,1) 100%);
+  background: rgb(229, 228, 226);
+  background: radial-gradient(
+    circle,
+    rgba(229, 228, 226, 1) 0%,
+    rgba(41, 41, 41, 1) 100%
+  );
   padding: 20px;
-  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Set a higher z-index */
+  z-index: 100; 
+  display: flex;
+  flex-direction: row;
 }
+.card .navbar {
+  display: flex;
+  justify-content: space-around; 
+  background:transparent; 
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.card .image {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  justify-content: end;
+}
+
 .card img {
   width: 100%;
-  max-width: 200px; /* Adjust the size as needed */
-  border-radius: 50%;
-  margin-bottom: 15px;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover; 
 }
 
 .card .content {
-  color: #e7e5e5;
+  flex: 1;
+  padding: 0 20px; 
+  position: relative;
 }
 
 .card h1 {
   font-size: 2em;
   margin-bottom: 10px;
 }
-
-/* Additional styling for a border effect inside the card */
-.card::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
-  border: 2px solid #fff;
-  border-radius: 12px;
-}
-
