@@ -72,7 +72,8 @@ body {
   transform: translate(-50%, -50%);
   width: 800px;
   height: 500px;
-  background-color: #000;
+  background: rgb(229,228,226);
+  background: radial-gradient(circle, rgba(229,228,226,1) 0%, rgba(41,41,41,1) 100%);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -86,7 +87,7 @@ body {
 }
 
 .card .content {
-  color: #fff;
+  color: #e7e5e5;
 }
 
 .card h1 {
