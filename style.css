@@ -67,7 +67,7 @@ body {
 .card {
   position: absolute;
   border: #111 2px solid;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 900px;
@@ -113,6 +113,7 @@ body {
 .show {
   flex: 1; 
   height: 100%;
+  display: none;
 }
 
 .left-side {
@@ -144,4 +145,15 @@ body {
   font-size: 2em;
   margin-bottom: 20px;
   white-space: nowrap;
+}
+
+
+/* project */
+
+#projects-section {
+  background-color: black;
+  color: white;
+  height: 100vh; /* Set a specific height */
+
+  z-index: 2000; /* Ensure the projects section is above the cursor */
 }
